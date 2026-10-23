@@ -8,6 +8,9 @@ eleventyComputed:
   <h1>Refund policy</h1>
   <p class="muted">Last updated: {{ meta.lastUpdatedLegal }}</p>
   <p>If {{ brand.proName }} isn't right for you, you can have your money back in full within <strong>{{ brand.refundDays }} days</strong> of purchase. No questions asked.</p>
+  <p>This refund is in addition to your rights under the Australian Consumer Law. Its consumer guarantees still apply, cannot be excluded, and are not limited by this policy or by the {{ brand.refundDays }}-day period. If you are in the EU or UK, your 14-day right to withdraw from a purchase also applies.</p>
+  <h2>Who processes your payment and refund</h2>
+  <p>Lemon Squeezy is the merchant of record and the seller of {{ brand.proName }}: it handles the payment, charges any applicable sales tax or VAT, and issues your receipt and any invoice. Refunds are paid back through Lemon Squeezy.</p>
   <h2>How to ask</h2>
   <ol>
     <li>Email <a href="mailto:{{ brand.supportEmail }}">{{ brand.supportEmail }}</a> from the address you used at checkout, or include that address and your order number.</li>
@@ -16,5 +19,5 @@ eleventyComputed:
   <h2>What happens to your licence</h2>
   <p>After a refund, the licence key stops working and the extension returns to the free features. Nothing you saved is deleted.</p>
   <h2>After {{ brand.refundDays }} days</h2>
-  <p>Contact us anyway if something is wrong — and your rights under consumer law, such as the Australian Consumer Law and the 14-day withdrawal right in the EU and UK, always apply.</p>
+  <p>Contact us anyway if something is wrong. Your rights under consumer law, including the Australian Consumer Law guarantees, do not end after {{ brand.refundDays }} days.</p>
 </div>
