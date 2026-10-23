@@ -1,0 +1,54 @@
+[
+  {
+    "q": "How does saving as PDF work?",
+    "a": "Click Save PDF in the clean preview. Your browser's print window opens: choose \"Save as PDF\" as the destination (the browser remembers this next time), keep Margins on Default, and click Save. The PDF has real, selectable text and working links.",
+    "home": true
+  },
+  {
+    "q": "Does it upload the pages I save?",
+    "a": "No. Pages are cleaned on your computer and your saved pages stay on your computer. There are no servers that receive your pages, and no analytics or tracking.",
+    "home": true
+  },
+  {
+    "q": "Why are some images loaded from other websites?",
+    "a": "Many sites keep their images on separate image servers. Images from the page's own site are copied when you capture it; images hosted elsewhere are loaded from those servers when you preview or save, just as when you view the page (they see your IP address). You can turn images, or images from other websites, off in the settings.",
+    "home": true
+  },
+  {
+    "q": "What's the difference between Free and Pro?",
+    "a": "Free lets you clean and save single pages as often as you like, and combine up to 3 pages into one PDF. Pro is a one-off payment that removes the 3-page limit and adds a contents page with links, your own header and footer text, adding all open tabs at once, and a shortcut and right-click menu for adding pages.",
+    "home": true
+  },
+  {
+    "q": "Is Pro a subscription?",
+    "a": "No. Pro is a single payment. Updates are included."
+  },
+  {
+    "q": "Who handles the payment?",
+    "a": "Lemon Squeezy is the seller (merchant of record). It takes the payment, charges any sales tax or VAT that applies, and sends your receipt and licence key."
+  },
+  {
+    "q": "How do I use Pro on another computer?",
+    "a": "Paste the same licence key on the other computer (Options → Licence). One key works on up to {{ACTIVATIONS}} computers; you can remove it from a computer you no longer use to free a slot."
+  },
+  {
+    "q": "Does it work offline?",
+    "a": "Yes. Cleaning and saving work offline. Images hosted on other websites need an internet connection to appear. Pro keeps working offline once it has been activated."
+  },
+  {
+    "q": "Which pages can't be saved?",
+    "a": "Browsers don't let extensions read their own pages (settings, the new tab page, extension stores) or the built-in PDF viewer. Pages drawn entirely as an image or app, such as some online editors, have no text to capture. For pages that load more content as you scroll, scroll first so the content is on the page."
+  },
+  {
+    "q": "Does it work with pages I'm logged in to?",
+    "a": "Yes. It reads the page as your browser shows it, so logged-in pages work, including images from the same site."
+  },
+  {
+    "q": "Which browsers are supported?",
+    "a": "Google Chrome and Microsoft Edge on desktop (version 131 or newer)."
+  },
+  {
+    "q": "Can I get a refund?",
+    "a": "Yes. If Pro isn't right for you, email us within {{REFUND_DAYS}} days of purchase for a full refund, no questions asked."
+  }
+]

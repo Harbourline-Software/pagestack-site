@@ -1,0 +1,4 @@
+<div class="buttons">
+  {% if brand.chromeStoreUrl %}<a class="btn primary" href="{{ brand.chromeStoreUrl }}">Add to Chrome — it's free</a>{% else %}<span class="btn primary disabled" aria-disabled="true">Add to Chrome — coming soon</span>{% endif %}
+  {% if brand.edgeStoreUrl %}<a class="btn" href="{{ brand.edgeStoreUrl }}">Get it for Edge</a>{% else %}<span class="btn disabled" aria-disabled="true">Edge — coming soon</span>{% endif %}
+</div>

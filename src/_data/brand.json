@@ -1,0 +1,28 @@
+{
+  "name": "PageStack",
+  "storeTitle": "PageStack: Save Web Pages to Clean PDF",
+  "summary": "Clean up any web page and save it as a tidy PDF. Combine pages from several tabs into one PDF; Pro adds a contents page.",
+  "tagline": "Clean web pages into tidy PDFs — one page or a whole stack.",
+  "proName": "PageStack Pro",
+  "priceLabel": "US$12, one-off",
+  "refundDays": 30,
+  "supportEmail": "support@example.com",
+  "siteUrl": "https://pjfigueroa95-cmd.github.io/pagestack-site",
+  "sitePathPrefix": "/pagestack-site/",
+  "customDomain": "",
+  "checkoutUrl": "",
+  "lemonSqueezy": {
+    "storeId": "",
+    "productId": ""
+  },
+  "chromeStoreUrl": "",
+  "edgeStoreUrl": "",
+  "seller": {
+    "country": "Australia"
+  },
+  "colours": {
+    "accent": "#3157D5",
+    "accentDark": "#8FA8FF"
+  },
+  "activationLimit": 5
+}

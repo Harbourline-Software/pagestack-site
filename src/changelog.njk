@@ -1,0 +1,13 @@
+---
+layout: base.njk
+eleventyComputed:
+  title: "Changelog"
+  description: "Every release of {{ brand.name }} and what changed."
+---
+<div class="wrap prose">
+  <h1>Changelog</h1>
+  {% for release in changelog %}
+  <h2>{{ release.version }}{% if release.date %} <span class="muted small">— {{ release.date }}</span>{% endif %}</h2>
+  <ul>{% for note in release.notes %}<li>{{ note }}</li>{% endfor %}</ul>
+  {% endfor %}
+</div>

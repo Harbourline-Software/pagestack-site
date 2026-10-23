@@ -1,0 +1,26 @@
+---
+layout: base.njk
+eleventyComputed:
+  title: "Support"
+  description: "Get help with {{ brand.name }}: contact details, what to include, and licence key help."
+---
+<div class="wrap prose">
+  <h1>Support</h1>
+  <p>Email <a href="mailto:{{ brand.supportEmail }}">{{ brand.supportEmail }}</a>. We usually reply within two business days.</p>
+  <h2>To help us help you, please include</h2>
+  <ul>
+    <li>Your browser and its version (for example, Chrome 154 on Windows 11).</li>
+    <li>The address of the page you were saving, if it isn't private.</li>
+    <li>What you expected and what happened instead.</li>
+    <li>The diagnostic info from the extension: Options → Copy diagnostic info. It contains versions, settings and recent error messages — never your licence key or the pages you saved.</li>
+  </ul>
+  <h2>Licence key problems</h2>
+  <ul>
+    <li><strong>"That key wasn't recognised":</strong> copy the whole key from your receipt email again; a missing character is the usual cause.</li>
+    <li><strong>"Active on {{ brand.activationLimit }} computers":</strong> remove the licence from a computer you no longer use (Options → Licence → Remove licence from this computer), or email us and we'll reset it.</li>
+    <li><strong>Lost your key?</strong> Lemon Squeezy can resend your receipt from its "My orders" page, or email us with your purchase email address.</li>
+  </ul>
+  <h2>Refunds</h2>
+  <p>See the <a href="/legal/refunds/">refund policy</a>. Just email us — no questions asked within {{ brand.refundDays }} days.</p>
+  <p>Many answers are in the <a href="/faq/">FAQ</a>.</p>
+</div>

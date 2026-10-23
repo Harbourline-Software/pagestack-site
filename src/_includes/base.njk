@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}{% if title != brand.name %} · {{ brand.name }}{% endif %}</title>
+    <meta name="description" content="{{ description }}" />
+    {% if robots %}<meta name="robots" content="{{ robots }}" />{% endif %}
+    <link rel="canonical" href="{{ page.url | absolute }}" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#15161a" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ brand.name }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:url" content="{{ page.url | absolute }}" />
+    <meta property="og:image" content="{{ '/assets/img/social-card.png' | absolute }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/img/icon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/theme.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="logo" href="/"><img src="/assets/img/icon.svg" alt="" width="28" height="28" /> {{ brand.name }}</a>
+        <nav aria-label="Main">
+          <a href="/#features">Features</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/support/">Support</a>
+          <button class="theme-toggle" type="button" aria-label="Switch light or dark theme" data-theme-toggle>◐</button>
+        </nav>
+      </div>
+    </header>
+    <main id="main">{{ content | safe }}</main>
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p>© {{ meta.year }} {{ brand.name }}. Made in {{ brand.seller.country }}.</p>
+        <nav aria-label="Footer">
+          <a href="/legal/privacy/">Privacy</a>
+          <a href="/legal/terms/">Terms of sale</a>
+          <a href="/legal/refunds/">Refunds</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="/support/">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+{% if brand.checkoutUrl %}<a class="btn primary" href="{{ brand.checkoutUrl }}">Buy {{ brand.proName }}</a>{% else %}<span class="btn primary disabled" aria-disabled="true">{{ brand.proName }} — on sale at launch</span>{% endif %}

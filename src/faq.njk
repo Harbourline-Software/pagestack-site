@@ -1,0 +1,14 @@
+---
+layout: base.njk
+eleventyComputed:
+  title: "Frequently asked questions"
+  description: "How {{ brand.name }} saves PDFs, what stays on your computer, Free vs Pro, licences, refunds and supported browsers."
+---
+<div class="wrap prose">
+  <h1>Frequently asked questions</h1>
+  {% for item in faq %}
+  <h2>{{ item.q }}</h2>
+  <p>{{ item.a | replace("{{ACTIVATIONS}}", brand.activationLimit) | replace("{{REFUND_DAYS}}", brand.refundDays) }}</p>
+  {% endfor %}
+  <p>Still stuck? <a href="/support/">Contact support</a>.</p>
+</div>

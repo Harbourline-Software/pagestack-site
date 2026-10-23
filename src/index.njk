@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: "{{ brand.name }}"
+description: "{{ brand.summary }}"
+eleventyComputed:
+  title: "{{ brand.name }}: save clean, tidy PDFs of web pages"
+  description: "{{ brand.summary }}"
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Save clean, tidy PDFs of web pages — one page or a whole stack.</h1>
+      <p class="lead">{{ brand.name }} removes ads, menus, sidebars, cookie banners and pop-ups, then saves the page as a PDF with real text and working links. Combine pages from several tabs into one PDF. Everything happens on your computer.</p>
+      {% include "store-buttons.njk" %}
+      <p class="small muted">Free for single pages. {{ brand.proName }} is {{ brand.priceLabel }} — no subscription.{% if not brand.chromeStoreUrl %} Not yet released.{% endif %}</p>
+    </div>
+    <figure class="demo" aria-label="Illustration: a cluttered web page becomes a clean page">
+      <div class="mock messy" aria-hidden="true">
+        <div class="bar"></div>
+        <div class="ad">AD</div>
+        <div class="line w90"></div><div class="line w70"></div>
+        <div class="cookie">We use cookies… <span>Accept</span></div>
+        <div class="side"></div>
+        <div class="line w80"></div><div class="line w60"></div>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="mock clean" aria-hidden="true">
+        <div class="title"></div>
+        <div class="line w90"></div><div class="line w95"></div><div class="line w80"></div>
+        <div class="line w90"></div><div class="line w70"></div>
+        <div class="footer-line"></div>
+      </div>
+      <figcaption class="small muted">A demo video will appear here at launch.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="features" class="wrap features">
+  <h2>What it does</h2>
+  <div class="grid">
+    <article><h3>Clean preview</h3><p>One click opens the page without the clutter, in a new tab. Switch between the article and the full page if something is missing.</p></article>
+    <article><h3>Click to remove</h3><p>Anything left you don't want — a sidebar, a comment section, a stray image — goes with one click. Undo is always there.</p></article>
+    <article><h3>Real PDFs</h3><p>Selectable, searchable text and working links. Every page shows the source address, the date you saved it and the page number.</p></article>
+    <article><h3>Packs</h3><p>Collect pages from several tabs, reorder and rename them, then save them as one PDF with each page on a new sheet. Pro adds a contents page.</p></article>
+    <article><h3>Private by design</h3><p>Pages are processed on your computer and saved packs stay on it. No servers receive your pages. No tracking.</p></article>
+    <article><h3>Works where you're logged in</h3><p>It reads the page your browser shows, so intranet pages, course pages and other logged-in pages work too.</p></article>
+  </div>
+</section>
+
+<section class="wrap" id="plans">
+  <h2>Free and Pro</h2>
+  {% include "plans-table.njk" %}
+  <div class="price-card">
+    <p class="price">{{ brand.priceLabel }}</p>
+    <p>{{ brand.proName }} is a single payment — no subscription. Full refund within {{ brand.refundDays }} days if it isn't right for you.</p>
+    {% include "buy-button.njk" %}
+    <p class="small muted">Payments, tax and receipts are handled by Lemon Squeezy, the merchant of record.</p>
+  </div>
+</section>
+
+<section class="wrap faq-short">
+  <h2>Questions</h2>
+  {% for item in faq %}{% if item.home %}
+  <details><summary>{{ item.q }}</summary><p>{{ item.a | replace("{{ACTIVATIONS}}", brand.activationLimit) | replace("{{REFUND_DAYS}}", brand.refundDays) }}</p></details>
+  {% endif %}{% endfor %}
+  <p><a href="/faq/">All questions →</a></p>
+</section>

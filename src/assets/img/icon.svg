@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Draft mark: three stacked pages. Accent colour matches brand.json colours.accent. -->
+  <rect x="34" y="14" width="66" height="84" rx="9" fill="#9fb2ef" transform="rotate(8 67 56)"/>
+  <rect x="30" y="20" width="66" height="84" rx="9" fill="#6d87e3" transform="rotate(3 63 62)"/>
+  <rect x="26" y="26" width="66" height="84" rx="9" fill="#3157D5"/>
+  <rect x="37" y="42" width="44" height="7" rx="3.5" fill="#ffffff"/>
+  <rect x="37" y="56" width="44" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+  <rect x="37" y="68" width="36" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+  <rect x="37" y="80" width="40" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+  <rect x="37" y="92" width="26" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+</svg>

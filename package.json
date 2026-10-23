@@ -1,0 +1,15 @@
+{
+  "name": "pagestack-site",
+  "private": true,
+  "type": "module",
+  "description": "Product website. Name, prices and URLs come from src/_data/brand.json (synced from the extension repo).",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "check": "node scripts/check-site.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7"
+  }
+}

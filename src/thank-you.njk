@@ -1,0 +1,18 @@
+---
+layout: base.njk
+eleventyComputed:
+  title: "Thank you — activate {{ brand.proName }}"
+  description: "How to activate your {{ brand.proName }} licence key."
+---
+<div class="wrap prose">
+  <h1>Thank you for buying {{ brand.proName }}</h1>
+  <p>Your licence key is on the Lemon Squeezy receipt page and in the receipt email. To switch on Pro:</p>
+  <ol class="steps">
+    <li><strong>Copy the licence key</strong> from the receipt (all of it).</li>
+    <li><strong>Open the extension's options:</strong> right-click the {{ brand.name }} icon in your toolbar and choose <em>Options</em>.</li>
+    <li><strong>Paste the key</strong> under <em>Licence</em> and click <em>Activate</em>. Every open {{ brand.name }} page switches to Pro straight away.</li>
+  </ol>
+  <h2>Didn't get the email?</h2>
+  <p>Check your spam folder, or ask Lemon Squeezy to resend it from its "My orders" page. Still nothing? Email <a href="mailto:{{ brand.supportEmail }}">{{ brand.supportEmail }}</a> with the email address you used at checkout.</p>
+  <p>Using another computer? Paste the same key there — one key works on up to {{ brand.activationLimit }} computers.</p>
+</div>
