@@ -16,7 +16,7 @@ are in `src/_data/faq.json`, and release notes are in `src/_data/changelog.json`
 1. In this repo on GitHub, open **Settings → Pages**.
 2. Under **Build and deployment → Source**, choose **GitHub Actions**. Nothing else to set.
 3. Open the **Actions** tab and wait for **Deploy site** to get a green tick (about 1–2 minutes). If it ran before Pages was enabled and failed, click it → **Re-run all jobs**.
-4. Back in **Settings → Pages**, the address is shown: `https://pjfigueroa95-cmd.github.io/pagestack-site/`.
+4. Back in **Settings → Pages**, the address is shown: `https://harbourline-software.github.io/pagestack-site/`.
 5. Check it on your PC and phone.
 6. Optional: in Chrome DevTools → Lighthouse (Mobile), the target is 95+ in all four categories.
 
@@ -24,7 +24,7 @@ are in `src/_data/faq.json`, and release notes are in `src/_data/changelog.json`
 
 1. Buy the domain.
 2. In your registrar's DNS settings:
-   - for `www`, add a **CNAME** record pointing to `pjfigueroa95-cmd.github.io`;
+   - for `www`, add a **CNAME** record pointing to `harbourline-software.github.io`;
    - for the bare domain, add GitHub's four **A** records (listed on GitHub's "Managing a custom domain for your GitHub Pages site" page).
 3. In the extension repo's `brand/brand.json`:
    - set `customDomain` (e.g. `www.example.com`);
