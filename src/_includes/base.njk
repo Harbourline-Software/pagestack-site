@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }}{% if title != brand.name %} · {{ brand.name }}{% endif %}</title>
+    <title>{{ title }}{% if brand.name not in title %} · {{ brand.name }}{% endif %}</title>
     <meta name="description" content="{{ description }}" />
     {% if robots %}<meta name="robots" content="{{ robots }}" />{% endif %}
     <link rel="canonical" href="{{ page.url | absolute }}" />

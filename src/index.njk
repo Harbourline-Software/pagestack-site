@@ -61,7 +61,7 @@ eleventyComputed:
 <section class="wrap faq-short">
   <h2>Questions</h2>
   {% for item in faq %}{% if item.home %}
-  <details><summary>{{ item.q }}</summary><p>{{ item.a | replace("{{ACTIVATIONS}}", brand.activationLimit) | replace("{{REFUND_DAYS}}", brand.refundDays) }}</p></details>
+  <details><summary>{{ item.q }}</summary><p>{{ item.a | replace("{{ACTIVATIONS}}", brand.activationLimit) | replace("{{REFUND_DAYS}}", brand.refundDays) | replace("{{STORE}}", brand.seller.storeName) }}</p></details>
   {% endif %}{% endfor %}
   <p><a href="/faq/">All questions →</a></p>
 </section>

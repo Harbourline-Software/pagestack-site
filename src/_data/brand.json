@@ -18,7 +18,8 @@
   "chromeStoreUrl": "",
   "edgeStoreUrl": "",
   "seller": {
-    "country": "Australia"
+    "country": "Australia",
+    "storeName": "Harbourline Software"
   },
   "colours": {
     "accent": "#3157D5",

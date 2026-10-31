@@ -8,7 +8,7 @@ eleventyComputed:
   <h1>Frequently asked questions</h1>
   {% for item in faq %}
   <h2>{{ item.q }}</h2>
-  <p>{{ item.a | replace("{{ACTIVATIONS}}", brand.activationLimit) | replace("{{REFUND_DAYS}}", brand.refundDays) }}</p>
+  <p>{{ item.a | replace("{{ACTIVATIONS}}", brand.activationLimit) | replace("{{REFUND_DAYS}}", brand.refundDays) | replace("{{STORE}}", brand.seller.storeName) }}</p>
   {% endfor %}
   <p>Still stuck? <a href="/support/">Contact support</a>.</p>
 </div>

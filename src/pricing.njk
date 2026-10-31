@@ -14,9 +14,9 @@ eleventyComputed:
   </div>
   <h2>How buying works</h2>
   <ul>
-    <li>Lemon Squeezy is the seller (merchant of record): it takes the payment, charges any sales tax or VAT that applies in your country, and sends your receipt. Prices shown at checkout include tax where it applies.</li>
+    <li>Lemon Squeezy is the seller (merchant of record): it takes the payment, charges any sales tax or VAT that applies in your country, and sends your receipt. The store's name at checkout and on your card statement is {{ brand.seller.storeName }}. Prices shown at checkout include tax where it applies.</li>
     <li>You receive a licence key on the receipt page and by email. Paste it into the extension (Options → Licence) to switch on Pro.</li>
-    <li>One key works on up to {{ brand.activationLimit }} of your computers.</li>
+    <li>One key gives you {{ brand.activationLimit }} activations, and each browser counts as one (Chrome and Edge on the same computer use two). Deactivate (Options → Licence) frees one.</li>
     <li>If it isn't right for you, you can get a full refund within {{ brand.refundDays }} days — see the <a href="/legal/refunds/">refund policy</a>.</li>
   </ul>
 </div>

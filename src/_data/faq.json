@@ -25,11 +25,11 @@
   },
   {
     "q": "Who handles the payment?",
-    "a": "Lemon Squeezy is the seller (merchant of record). It takes the payment, charges any sales tax or VAT that applies, and sends your receipt and licence key."
+    "a": "Lemon Squeezy is the seller (merchant of record). It takes the payment, charges any sales tax or VAT that applies, and sends your receipt and licence key. The store is called {{STORE}}, so that is the name on your receipt and card statement."
   },
   {
-    "q": "How do I use Pro on another computer?",
-    "a": "Paste the same licence key on the other computer (Options → Licence). One key works on up to {{ACTIVATIONS}} computers; you can remove it from a computer you no longer use to free a slot."
+    "q": "How do I use Pro in another browser or on another computer?",
+    "a": "Paste the same licence key there (Options → Licence). One key gives you {{ACTIVATIONS}} activations, and each browser counts as one: Chrome and Edge on the same computer use two. Press Deactivate in a browser you no longer use to free one."
   },
   {
     "q": "Does it work offline?",

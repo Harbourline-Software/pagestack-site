@@ -17,7 +17,8 @@ eleventyComputed:
   <h2>Licence key problems</h2>
   <ul>
     <li><strong>"That key wasn't recognised":</strong> copy the whole key from your receipt email again; a missing character is the usual cause.</li>
-    <li><strong>"Active on {{ brand.activationLimit }} computers":</strong> remove the licence from a computer you no longer use (Options → Licence → Remove licence from this computer), or email us and we'll reset it.</li>
+    <li><strong>"This key has used all {{ brand.activationLimit }} activations":</strong> each browser counts as one. Press Deactivate (Options → Licence) in a browser you no longer use, or email us and we'll reset it.</li>
+    <li><strong>A charge from "{{ brand.seller.storeName }}"?</strong> That's this purchase: {{ brand.seller.storeName }} is the store's name on Lemon Squeezy, which sells {{ brand.proName }}.</li>
     <li><strong>Lost your key?</strong> Lemon Squeezy can resend your receipt from its "My orders" page, or email us with your purchase email address.</li>
   </ul>
   <h2>Refunds</h2>
